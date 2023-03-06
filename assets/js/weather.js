@@ -22,6 +22,7 @@ const loadDayForecastData = (e,city=0) => {
 const loadWeekForecastData = (e,city=0) => {
   
     const week = document.querySelector(".list-group")
+    week.innerHTML=" "
     let len=weather_data[0]["forecast_week"].length
     for (let i = 0; i < len; i++) {
         let text= weather_data[0]["forecast_week"][i]["text"]
